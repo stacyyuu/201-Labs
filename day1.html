@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Meta data lives here -->
+        <title>Class 1 Demo</title>
+        <style>
+            body{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            
+            h1{
+                color: white;
+                background-color: lavender;
+                text-align: center;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Class 1 Lab</h1>
+        </header>
+
+        <main> 
+            <script>
+                // get user's first name
+                let name = prompt('What is your first name?');
+                console.log('Name = ' + name);
+                document.write('<p style =\'color: white; background-color: lightcoral;\'> Hello, ' + name + '! </p>');
+               
+                // get user's favorite food
+                let food = prompt('What is your favorite food, ' + name + '?');
+                console.log('Favorite food = ' + food);
+                document.write('<p style =\'color: white; background-color: mediumaquamarine;\'>' + name + ' likes to eat ' + food + ' food. </p>');
+                
+                // get user's favorite dish 
+                let dish = prompt('What is your favorite ' + food + ' dish, ' + name + '?');
+                console.log('Favorite ' + food + ' dish = ' + dish);
+                document.write('<p style =\'color: white; background-color: lightseagreen;\'> Their favorite ' + food + ' dish is ' + dish + '. </p>');
+                
+                // user's favorite restaurant 
+                let restaurant = prompt('What is your favorite ' + food + ' restaurant, ' + name + '?');
+                console.log('Favorite ' + food + ' restaurant = ' + restaurant);
+                alert('Hello, ' + name + '. Your favorite food is ' + food + '. Your favorite ' + food + ' dish is ' + dish + '. Your favorite ' + food + ' restaurant is ' + restaurant + '.');
+                document.write('<p style =\'color: white; background-color: palegoldenrod;\'>' + name + ' likes to eat ' + food + ' food at ' + restaurant + '. </p>');
+            
+          
+              </script>
+  
+        </main>
+    </body>
+</html>
